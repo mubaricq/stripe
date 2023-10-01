@@ -1,0 +1,15 @@
+<div id="<%= dom_id product %>">
+  <p>
+    <strong>Name:</strong>
+    <%= product.name %>
+  </p>
+  <p>
+    <strong>Des:</strong>
+    <%= product.des %>
+  </p>
+  <p>
+    <strong>Price:</strong>
+    <%= product.price %>
+  </p>
+  <td><%= button_to "Buy now!", checkout_create_path, params: {id: product.id}, remote: true %></td>
+</div>

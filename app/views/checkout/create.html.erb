@@ -1,0 +1,8 @@
+<script>
+    let stripe = Stripe("<%= Rails.application.credentials[:stripe][:publishable_key]%>")
+    stripe.redirectToCheckout({
+        sessionId: '<%= @session.id %>'
+
+    })
+</script>
+<p>helllooifdsfjdlkjf</p>
